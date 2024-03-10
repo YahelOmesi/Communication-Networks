@@ -46,6 +46,9 @@ int main(int argc, char *argv[])
         }
     }
 
+    // With the help of this command we created through the terminal a random 2mb file
+    //dd if=/dev/urandom of=random_file bs=1M count=2
+
     // Open file
     FILE *file = fopen("testfile.bin", "rb");
     if (file == NULL)
